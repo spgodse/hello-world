@@ -6,12 +6,3 @@ deployment:
     branch: master
     commands:
       - ls
-      - pip install grequests
-      - pip install boto3
-      - pip install boto
-      - pip install pandas
-      - pip install psycopg2
-      - pip install sqlalchemy
-      - pip install asana
-      - python ./circle-ci-python/Caller.py $CIRCLE_BUILD_NUM $CIRCLE_PROJECT_REPONAME aws_mgm_insta_config.json
-      - python ./circle-ci-python/Caller.py $CIRCLE_BUILD_NUM $CIRCLE_PROJECT_REPONAME aws_univision_fb_config.json
