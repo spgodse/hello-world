@@ -6,6 +6,7 @@ deployment:
     branch: master
     commands:
       - ls
+      - git diff-tree --no-commit-id --name-only -r HEAD
 test:
   override:
     - find -mmin -1
